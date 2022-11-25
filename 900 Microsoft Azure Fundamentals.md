@@ -145,3 +145,91 @@ A maior parte da responsabilidade aqui fica a parte do serviço de nuvem, ficand
 - o pagamento é feito conforme o consumo, se você fizer maior uso dos recursos em um período para esse pagará mais caro.
 - é permitido que o usuário se comprometa a fazer um uso de recursos com antecedência e assim ganhar alguns descontos para esse serviço de até 72%.
 - a reserva de uso de serviços com antecedência  é feita  por um período de 1 a 3 anos. Caso o uso ultrapassar o valor pago pelo valor que precisará acrescentar.
+- Custos de entrada de dados - para alguns operações de entrada de dados o custo pode ser gratuito.
+- Custos de saída de dados - para a saída de dados, o valor definido é baseado por zonas, onde uma zona é um agrupamento geográfico de regiões do Azure, site: https://azure.microsoft.com/pt-br/pricing/details/bandwidth/;
+- tipo de assinatura, alguns tipos de assinatura podem incluir concessões de uso, exemplo assinatura de avaliação gratuita, inclui 12 meses de acesso grátis e mais um valor de credito para uso nos primeiros 30 dias.
+- através do Azure não estão a venda apenas os serviços da microsoft, você pode comparar também serviços de terceiros/fornecedores os valores cobrados no Azure Marketplace, essas soluções também são certificadas e estão de acordo com os padrões Azure.
+
+21. Quais são as diferenças entre a Calculadora de Preço e Custo Total de propriedade(TCO)?
+
+As duas calculadoras ajudam a estimar valores de investimentos nos serviços Azure, mas as duas tem propósitos diferentes.
+
+- calculadora de preço é para calcular valores de recursos individuais, seu foco é no custo de recursos provisionados da Azure e tem fins informativo. Ajuda a gerar uma estimativa de valores e nenhum serviço cotado ali será cobrado. Link: https://azure.microsoft.com/pt-br/pricing/calculator/
+- calculadora TCO, tem o foco em comparar valores entre uma estrutura local e a solução Azure, onde vc inclui as configurações do servidor físico, banco de dados e SO e recebe o valor desse mesmo servidor pelo Azure. Você consegue inclusive informar valores estimados com mão de obra e/ou energia elétrica. Site: https://azure.microsoft.com/pt-br/pricing/tco/calculator/ para esse calculo teremos 3 passos: 1definir as cargas de trabalho, 2 ajustar as pressuposições e 3 exibir relatório.
+
+22. O que é o gerenciamento de custos?
+
+O Gerenciamento de Custos permite verificar rapidamente os custos de recursos do Azure, criar alertas com base nos gastos com recursos e criar orçamentos que podem ser usados para automatizar o gerenciamento de recursos. Permite ver os custos totais por ciclo de cobrança, região, recurso etc.
+
+23. Quais os tipos de alertas de custos?
+
+- Alertas de orçamento
+- Alertas de crédito
+- Alertas de cota de gastos do departamento.
+
+24. Alerta de orçamento, notificam você quando os gastos, com base em uso ou custos, atingem ou excedem o valor definido na condição de alerta do orçamento. Os orçamentos do Gerenciamento de Custos são criados usando o portal do Azure ou a API de Consumo do Azure.
+
+25. Os alertas de crédito notificam você quando seus compromissos monetários de crédito do Azure são consumidos. Os compromissos monetários se destinam a organizações que têm EAs (Contratos Enterprise). Os alertas de crédito são gerados automaticamente a 90% e a 100% do saldo de crédito do Azure. Sempre que um alerta é gerado, ele se reflete nos alertas de custo e no email enviado aos proprietários da conta.
+
+26. Os alertas de crédito notificam você quando seus compromissos monetários de crédito do Azure são consumidos. Os compromissos monetários se destinam a organizações que têm EAs (Contratos Enterprise). Os alertas de crédito são gerados automaticamente a 90% e a 100% do saldo de crédito do Azure. Sempre que um alerta é gerado, ele se reflete nos alertas de custo e no email enviado aos proprietários da conta.
+
+27. orçamento que você define um limite de gastos para o Azure. Você pode definir orçamentos com base em uma assinatura, grupo de recursos, tipo de serviço ou outros critérios. Ao definir um orçamento, você também define um alerta de orçamento. Quando o orçamento atinge o nível de alerta do orçamento, ele dispara um alerta de orçamento que aparece na área de alertas de custo. Se configurados, os alertas de orçamento também enviarão uma notificação por email de que um limite de alerta de orçamento foi disparado.
+
+    Um uso mais avançado de orçamentos permite que as condições orçamentárias disparem a automação que suspende ou modifica recursos depois que a condição de gatilho ocorre.
+
+28. O que são marcas?
+
+É uma forma de organizar serviços nomeando e descrevendo como o mesmo vai se comportar, essa organização é essencial para garantir sucesso na gestão de recursos e valores. 
+
+As marcas fornecem informações extras ou metadados sobre os recursos.
+
+Esses metadados são úteis para:
+
+- **Gerenciamento de recursos** As marcas permitem que você localize em recursos associados a cargas de trabalho, ambientes, unidades de negócios e proprietários específicos e realize ações nesses recursos.
+- **Gerenciamento e otimização de recursos** As marcas permitem agrupar os recursos para que você possa relatar custos, alocar centros de custos internos, acompanhar orçamentos e prever o custo estimado.
+- **Gerenciamento de operações** As marcas permitem que você agrupe os recursos de acordo com o grau de importância da disponibilidade deles para os seus negócios. Esse agrupamento ajuda você a formular SLAs (Contratos de Nível de Serviço). Um SLA é uma garantia de tempo de atividade ou desempenho acordada entre você e seus usuários.
+- **Segurança** As marcas permitem que você classifique os dados pelo nível de segurança, como público ou confidencial.
+- **Governança e conformidade regulatória** As marcas permitem que você identifique recursos que se alinham com os requisitos de conformidade regulatória ou de governança, como a ISO 27001. Elas também podem fazer parte dos seus esforços de imposição de padrões. Por exemplo, você pode exigir que todos os recursos sejam marcados com um proprietário ou um nome de departamento.
+- **Automação e otimização de carga de trabalho** As marcas podem ajudar você a visualizar todos os recursos que participam de implantações complexas. Por exemplo, você pode marcar um recurso com o nome da carga de trabalho ou do aplicativo associado e usar um software como o Azure DevOps para executar tarefas automatizadas nesses recursos.
+
+exemplo de metadados:
+
+**Nome** 						**Valor**
+
+AppName					O nome do aplicativo do qual o recurso faz parte.
+
+CostCenter				O código do centro de custo interno.
+
+Proprietário			 	nome do proprietário de negócios responsável pelo recurso.
+
+Ambiente					Um nome de ambiente, como "Prod", "Dev" ou "Test".
+
+Impacto						O grau de importância do recurso para as operações de negócios, como "Crítico", "De 										alto impacto" ou "De baixo impacto".
+
+fonte: https://learn.microsoft.com/pt-br/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags
+
+29. O que são Maquinas virtuais no Azure?
+
+São como maquinas físicas, onde pode-se:
+
+- Controle total sobre o SO (sistema operacional).
+- Capacidade para executar um software personalizado.
+- Usar configurações personalizadas de hospedagem.
+
+pode-se agrupar VMs, desevolver tarefas secundárias
+
+30. como criar uma vm?
+
+NA area restrita No Cloud Shell, execute o comando `az vm create` 
+
+az vm create --name  MyVm --generate-ssh-keys --resource-group learn-d7ed86b3-01a9-4a12-8945-f639a13c15f1 --image  UbuntuLTS --admin-username azureuser 
+
+execute comando az vm extension set
+
+az vm extension set --resource-group learn-d7ed86b3-01a9-4a12-8945-f639a13c15f1 --vm-name MyVm --name customScript --publisher Microsoft.Azure.Extensions --version 2.1 --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
+
+esse ultimo comando:
+
+1. Executa `apt-get update` para baixar as informações mais recentes do pacote da Internet. Esta etapa ajuda a garantir que o próximo comando possa localizar a versão mais recente do pacote Nginx.
+2. Instala o Nginx.
+3. Define a home page, */var/www/html/index.html*, para imprimir uma mensagem de boas-vindas que inclui o nome de host da VM.
