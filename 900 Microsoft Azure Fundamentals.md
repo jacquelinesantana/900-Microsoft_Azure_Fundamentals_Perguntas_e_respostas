@@ -222,11 +222,15 @@ pode-se agrupar VMs, desevolver tarefas secundárias
 
 NA area restrita No Cloud Shell, execute o comando `az vm create` 
 
+```
 az vm create --name  MyVm --generate-ssh-keys --resource-group learn-d7ed86b3-01a9-4a12-8945-f639a13c15f1 --image  UbuntuLTS --admin-username azureuser 
+```
 
 execute comando az vm extension set
 
+```
 az vm extension set --resource-group learn-d7ed86b3-01a9-4a12-8945-f639a13c15f1 --vm-name MyVm --name customScript --publisher Microsoft.Azure.Extensions --version 2.1 --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
+```
 
 esse ultimo comando:
 
