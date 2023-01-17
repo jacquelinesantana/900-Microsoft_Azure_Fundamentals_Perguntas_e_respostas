@@ -237,3 +237,5 @@ esse ultimo comando:
 1. Executa `apt-get update` para baixar as informações mais recentes do pacote da Internet. Esta etapa ajuda a garantir que o próximo comando possa localizar a versão mais recente do pacote Nginx.
 2. Instala o Nginx.
 3. Define a home page, */var/www/html/index.html*, para imprimir uma mensagem de boas-vindas que inclui o nome de host da VM.
+
+https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networking-services/4-virtual-desktop
