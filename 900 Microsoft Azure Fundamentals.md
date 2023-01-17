@@ -239,3 +239,55 @@ esse ultimo comando:
 3. Define a home page, */var/www/html/index.html*, para imprimir uma mensagem de boas-vindas que inclui o nome de host da VM.
 
 https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networking-services/4-virtual-desktop
+
+31. Conta estudando gratuita do Azure, como funciona?
+
+    Oferece acesso gratuito a determinados produtos do Azure por 12 meses.
+
+    Um crédito a ser usado nos primeiros 12 meses e acesso gratuito a determinadas ferramentas para desenvolvedores de software. 
+
+    também oferede crédito de $100 em ferramentas para desenvolvedores gratuitas, além de permitir se inscrever sem cartão de credito.
+
+    link: https://azure.microsoft.com/free/students/
+
+32. Conta Microsoft Learn, como funciona?
+
+    É a área restrita que tem um recurso da Microsoft de aprendizagem para os produtos e serviços por meio de aprendizagem interativa, baseada em tarefas com mais de 80h de conteúdo gratuito. No final do treinamento essa plataforma reseta os testes para que você tenha um acesso limpo aos recursos e serviços sem os testes realizados durante seu desenvolvimento.
+
+33. Como acessar o Microsoft Learn?
+
+    a) acesse o link: https://learn.microsoft.com/pt-br/training/modules/describe-core-architectural-components-of-azure/
+    
+    b) clique no botão Aceitar os termos/condições
+    
+    c) aguarde a plataforma carregar do lado direito da tela o PowerShell
+    
+    d) use o comando `get-date` no powerShell, para exibir a data nesse novo CLI(interface de linha de comando). -> retorno esperado é a data do sistema: `Tuesday, January 17, 2023 10:15:41 PM`
+    
+    e) digite o comando `az version` para verificar a versão do Azure do CLI(interface de linha de comando). -> retorno esperado são as versões da Interface CLI, verão do CORE, versão do TELEMETRY e EXTENSIONS
+    
+    Exemplo:
+    
+    ```
+    {
+      "azure-cli": "2.43.0",
+      "azure-cli-core": "2.43.0",
+      "azure-cli-telemetry": "1.0.8",
+      "extensions": {
+        "ai-examples": "0.2.5",
+        "ml": "2.11.0",
+        "ssh": "1.1.3"
+      }
+    }
+    ```
+    
+    f) digite o comando bash na CLI -> retorno esperado é seu nome de usuário e alterar para o modo CLI para o bash
+    
+     `ti_jacque [ ~ ] $`
+    
+    g) para o modo Bash, deve executar o comando date e não `Get-date` para retornar a data, comando `date` - > retorno esperado: Tue Jan 17 10:28:48 PM UTC 2023
+    
+    h) execute o comando az upgrade para atualizar e retornar ao modo PowerShell 
+    
+    
+
