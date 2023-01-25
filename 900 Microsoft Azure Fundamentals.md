@@ -287,7 +287,126 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
     
     g) para o modo Bash, deve executar o comando date e não `Get-date` para retornar a data, comando `date` - > retorno esperado: Tue Jan 17 10:28:48 PM UTC 2023
     
-    h) execute o comando az upgrade para atualizar e retornar ao modo PowerShell 
+    h) execute o comando az upgrade para atualizar e retornar ao modo PowerShell
     
+34. Zonas de disponibilidade, são datacenters separados fisicamente dentro de uma região do Azure. As zonas de disponibilidade permitem isolamento no funcionamento, de maneira que se uma zona ficar inativa, as outras continuarão funcionando.
+
+35. Redundância: Para garantir e proteger seus dados e a disponibilidade dos mesmos, é importante pensar em uma estrutura que ao hospedar sua infraestrutura, incluir a redundância, o que exigirá a criação de ambientes de hardware duplicados.  As zonas de disponibilidade permitem alta disponibilidade, colocando os recursos em uma zona de disponibilidade e replicando em outras zonas de disponibilidade. Pode haver um custo para duplicar seus serviços.
+
+36. Zonas de disponibilidade são aplicáveis em: Máquinas virtuais, balanceadores de carga e bancos de dados SQL. 
+
+37. Quais os serviços que dão suporte as zonas de disponibilidade?
+
+    a) Serviços em zonas: VMS, Discos gerenciados, Endereços IP
+
+    b) Serviços de redundâncias de zona: armazenamento com redundância de zona, Banco de dados SQL.
+
+    c) Serviços não regionais: os serviços que estão sempre disponíveis em geografias do Azure e são resilientes a interrupções em toda zona.
+
+38. Pares de regiões: Serve como apoio para quando um evento atinge várias zonas de disponibilidade. Exemplo EUA, Europa ou Ásia são emparelhadas (cerca de 480km de distancia entre sí para as áreas.) OBS a recuperação e replicação devem ser configuradas pelo cliente em alguns serviços.
+
+39. Recursos: são todos e qualquer serviço Azure que você venha a implementar, criar, provisionar...
+
+40. Grupos de recursos: um recurso é um bloco de construção básico do Azure. Os grupos de recurso são simplesmente agrupamento de recursos. quando se cria um recurso, é necessário inclui-lo em um grupo de recursos. Podemos mover um recurso de um grupo para outro, porém não podemos adicionar um grupo ou outro, exemplo: grupo de recursos a pertence a grupo de recursos c.
+
+41. Vantagens dos grupos de recursos: quando vc adicionar uma ação a um grupo, todos os recursos desse grupo recebem essa ação, quando se da permissão de acesso a um grupo de recursos, todos os recursos desse grupo se tornam acessíveis, e quando se exclui um grupo, todos os recursos são excluídos.
+
+42. Assinaturas do azure, são uma unidade de gerenciamento, cobrança e escala, facilita a cobrança. Uma conta pode ter várias assinaturas. 
+
+43. Limites para assinatura:
+
+    a) Limite de cobrança-> é cobrada pelo uso do Azure e pode ser gerado diversos relatórios para as assinaturas diferentes e faturas separadas tbm. 
+
+    b) Limite de controle de acesso: permite separar/ setorizar os acessos por um controle de assinaturas específicas. 
+
+44. Assinaturas adicionais Azure:
+
+    a) Ambientes -> separa ambientes exemplo: para desenvolvimento e testes. 
+
+    b) Estruturas organizacionais-> exemplo separar os setores de uma empresa e colocando a cada setor os recursos e limitar alguns afim de customizar os custos.
+
+    c) Cobrança-> para melhor acompanhar os custos vc pode separar a cobrança em assinaturas distintas, exemplo uma assinatura para gerar cobrança para o desenvolvimento e testes e outra assinatura para as demandas de produção.
+
+45. Hierarquia Azure: Recursos-> grupos de recursos -> assinaturas -> Grupos de gerenciamento
+
+46. O que são grupos de gerenciamento?
+
+    As assinaturas podem ser organizadas em contêineres, com isso todas as assinaturas de um grupo de gerenciamento herdam todas as configurações desse contêiner. Os grupos de gerenciamento podem ser alinhados.
+
+    imagem do site Learn Microsoft:
+
+    ![/imagem de exemplo de uma hierarquia de grupo de gerenciamento](https://learn.microsoft.com/pt-br/training/wwl-azure/describe-core-architectural-components-of-azure/media/management-groups-subscriptions-dfd5a108.png)
+
     
 
+      
+    
+47. Sobre grupos de gerenciamento: 
+
+    a) 10.000 grupos de gerenciamento podem ter suporte em um único diretório
+
+    b) uma arvore de grupo de gerenciamento pode dar suporte a até seis níveis de profundidade. Esse limite não inclui o nível raiz nem o nível da assinatura
+
+    c) cada grupo de gerenciamento e assinatura podem dar suporte a somente um pai.
+
+48. criando um recurso:
+
+    a) acessar o link: https://portal.azure.com/learn.docs.microsoft.com
+
+    b)  Criar um recurso >  Máquina Virtual > Criar.
+
+    c) Começar com uma avaliação gratuita do Azure - iniciar
+
+    d) inicio gratuito
+
+    e) preencher formulário com dados pessoais
+
+49. O que é computação em nuvem?
+
+    a) é uma gama de produtos que é entregue a você pela internet(servidor, armazenamentos, banco de dados, redes, software, análises e inteligência. Oferece inovação mais rápida, recursos flexíveis e economias de escala.)
+
+50. o que é o Azure monitor?
+
+    a) é um painel para monitoramento dos recursos, assinaturas ...
+
+51. Integridade de serviço?
+
+    a) painel que te da acesso a integridade, alertas de problemas/manutenções, avisos de manutenções 
+
+52. Central de segurança da Azure - microsoft defender para a nuvem
+
+    a) é um serviço de monitoramento de todos os serviços da azure, ajuda a garantir uma postura -  o quanto seu ambiente esta seguro conforme leis, compliance. exemplo para PCI DSS - Padrão de segurança de dados de setor de cartão de pagamento
+
+53. Azure Sentinel - é um Siem(centraliza os alertas de todos os servidores da sua aplicação) que permite coleta de dados de todos os usuários, dispositivos, aplicativos e infraestrutura. Minimiza falsos positivos usando a análise abrangente e a inteligencia contra ameaças da Microsoft.
+
+54. O que é o firewall do azure? é a configuração de Fireware que permite especificar portas de acesso para servidores e permissões.
+
+55. O que é ataque de DDOS?
+
+    a) é um ataque de negação de serviços distribuídos, tenta sobrecarregar e esgotar os recursos de um aplicativo.
+
+56. O que é o MFA? é um método de autenticação em duas ou mais etapas (mensagem de email ou whatsapp ou sms por exemplo além da senha no aplicativo)
+
+57. O que é o Acesso condicional? é uma ferramenta da Azure Active Directory para permitir ou negar o acesso a recursos com base em sinais de identidade;
+
+58. O que é bloqueio de recursos?  é um bloqueio que impede que os recursos configurados sejam excluídos ou alterados por acidente.
+
+59. Quais categorias de conformidade estão disponíveis no azure? conformidade com leis, Isos...
+
+60. O que é o Azure governamental? Atende as necessidades e leis e se adapta as necessidades de onde esta sendo implementada
+
+61. O que é a calculadora de TCO(Custo total de propriedade) = é um recurso onde ajuda a estimar a economia de custos de operar sua solução no Azure ao longo do tempo(considerando uma estrutura física como contrapeso)
+
+62. Que tipos de assinatura o Azure possui? Gratuíta; Pago conforme uso; Ofertas de membro;
+
+63. O que são SLAS(Contrato de nível de serviço)? é um contrato formal entre uma empresa de serviços e o cliente. Na Azure esse contrato define os padrões de desempenho com os quais  Microsoft se compromete a fornecer para você (cliente).
+
+64. O que é ciclo de vida? Produtos em teste(podem sair do ar a qualquer momento),;
+
+65. https://click.uniacademy.com.br/cloud-hero-az-900-revisao
+
+66. [https://click.uniacademy.com.br/cadastro](https://click.uniacademy.com.br/cadastro)
+
+67. [https://bit.ly/guia--de--estudos](https://bit.ly/guia--de--estudos)
+
+Revisão https://www.youtube.com/watch?v=YjMSGV9YQSA&ab_channel=WellingtonAg%C3%A1pto-CloudHero
