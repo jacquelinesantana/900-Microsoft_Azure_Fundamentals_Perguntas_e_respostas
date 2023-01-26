@@ -256,39 +256,39 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 
 33. Como acessar o Microsoft Learn?
 
-    a) acesse o link: https://learn.microsoft.com/pt-br/training/modules/describe-core-architectural-components-of-azure/
-    
-    b) clique no botão Aceitar os termos/condições
-    
-    c) aguarde a plataforma carregar do lado direito da tela o PowerShell
-    
-    d) use o comando `get-date` no powerShell, para exibir a data nesse novo CLI(interface de linha de comando). -> retorno esperado é a data do sistema: `Tuesday, January 17, 2023 10:15:41 PM`
-    
-    e) digite o comando `az version` para verificar a versão do Azure do CLI(interface de linha de comando). -> retorno esperado são as versões da Interface CLI, verão do CORE, versão do TELEMETRY e EXTENSIONS
-    
+- acesse o link: https://learn.microsoft.com/pt-br/training/modules/describe-core-architectural-components-of-azure/
+  
+- clique no botão Aceitar os termos/condições
+  
+- aguarde a plataforma carregar do lado direito da tela o PowerShell
+  
+- use o comando `get-date` no powerShell, para exibir a data nesse novo CLI(interface de linha de comando). -> retorno esperado é a data do sistema: `Tuesday, January 17, 2023 10:15:41 PM`
+  
+- digite o comando `az version` para verificar a versão do Azure do CLI(interface de linha de comando). -> retorno esperado são as versões da Interface CLI, verão do CORE, versão do TELEMETRY e EXTENSIONS
+  
     Exemplo:
     
-    ```
-    {
-      "azure-cli": "2.43.0",
-      "azure-cli-core": "2.43.0",
-      "azure-cli-telemetry": "1.0.8",
-      "extensions": {
-        "ai-examples": "0.2.5",
-        "ml": "2.11.0",
-        "ssh": "1.1.3"
+    - ```
+      {
+        "azure-cli": "2.43.0",
+        "azure-cli-core": "2.43.0",
+        "azure-cli-telemetry": "1.0.8",
+        "extensions": {
+          "ai-examples": "0.2.5",
+          "ml": "2.11.0",
+          "ssh": "1.1.3"
+        }
       }
-    }
-    ```
+      ```
     
-    f) digite o comando bash na CLI -> retorno esperado é seu nome de usuário e alterar para o modo CLI para o bash
-    
+- digite o comando bash na CLI -> retorno esperado é seu nome de usuário e alterar para o modo CLI para o bash
+  
      `ti_jacque [ ~ ] $`
     
-    g) para o modo Bash, deve executar o comando date e não `Get-date` para retornar a data, comando `date` - > retorno esperado: Tue Jan 17 10:28:48 PM UTC 2023
-    
-    h) execute o comando az upgrade para atualizar e retornar ao modo PowerShell
-    
+- para o modo Bash, deve executar o comando date e não `Get-date` para retornar a data, comando `date` - > retorno esperado: Tue Jan 17 10:28:48 PM UTC 2023
+  
+- execute o comando az upgrade para atualizar e retornar ao modo PowerShell
+  
 34. Zonas de disponibilidade, são datacenters separados fisicamente dentro de uma região do Azure. As zonas de disponibilidade permitem isolamento no funcionamento, de maneira que se uma zona ficar inativa, as outras continuarão funcionando.
 
 35. Redundância: Para garantir e proteger seus dados e a disponibilidade dos mesmos, é importante pensar em uma estrutura que ao hospedar sua infraestrutura, incluir a redundância, o que exigirá a criação de ambientes de hardware duplicados.  As zonas de disponibilidade permitem alta disponibilidade, colocando os recursos em uma zona de disponibilidade e replicando em outras zonas de disponibilidade. Pode haver um custo para duplicar seus serviços.
@@ -297,11 +297,11 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 
 37. Quais os serviços que dão suporte as zonas de disponibilidade?
 
-    a) Serviços em zonas: VMS, Discos gerenciados, Endereços IP
+- Serviços em zonas: VMS, Discos gerenciados, Endereços IP
 
-    b) Serviços de redundâncias de zona: armazenamento com redundância de zona, Banco de dados SQL.
+- Serviços de redundâncias de zona: armazenamento com redundância de zona, Banco de dados SQL.
 
-    c) Serviços não regionais: os serviços que estão sempre disponíveis em geografias do Azure e são resilientes a interrupções em toda zona.
+- Serviços não regionais: os serviços que estão sempre disponíveis em geografias do Azure e são resilientes a interrupções em toda zona.
 
 38. Pares de regiões: Serve como apoio para quando um evento atinge várias zonas de disponibilidade. Exemplo EUA, Europa ou Ásia são emparelhadas (cerca de 480km de distancia entre sí para as áreas.) OBS a recuperação e replicação devem ser configuradas pelo cliente em alguns serviços.
 
@@ -315,17 +315,17 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 
 43. Limites para assinatura:
 
-    a) Limite de cobrança-> é cobrada pelo uso do Azure e pode ser gerado diversos relatórios para as assinaturas diferentes e faturas separadas tbm. 
+- Limite de cobrança-> é cobrada pelo uso do Azure e pode ser gerado diversos relatórios para as assinaturas diferentes e faturas separadas tbm. 
 
-    b) Limite de controle de acesso: permite separar/ setorizar os acessos por um controle de assinaturas específicas. 
+- Limite de controle de acesso: permite separar/ setorizar os acessos por um controle de assinaturas específicas. 
 
 44. Assinaturas adicionais Azure:
 
-    a) Ambientes -> separa ambientes exemplo: para desenvolvimento e testes. 
+- Ambientes -> separa ambientes exemplo: para desenvolvimento e testes. 
 
-    b) Estruturas organizacionais-> exemplo separar os setores de uma empresa e colocando a cada setor os recursos e limitar alguns afim de customizar os custos.
+- Estruturas organizacionais-> exemplo separar os setores de uma empresa e colocando a cada setor os recursos e limitar alguns afim de customizar os custos.
 
-    c) Cobrança-> para melhor acompanhar os custos vc pode separar a cobrança em assinaturas distintas, exemplo uma assinatura para gerar cobrança para o desenvolvimento e testes e outra assinatura para as demandas de produção.
+- Cobrança-> para melhor acompanhar os custos vc pode separar a cobrança em assinaturas distintas, exemplo uma assinatura para gerar cobrança para o desenvolvimento e testes e outra assinatura para as demandas de produção.
 
 45. Hierarquia Azure: Recursos-> grupos de recursos -> assinaturas -> Grupos de gerenciamento
 
@@ -343,39 +343,39 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
     
 47. Sobre grupos de gerenciamento: 
 
-    a) 10.000 grupos de gerenciamento podem ter suporte em um único diretório
+- 10.000 grupos de gerenciamento podem ter suporte em um único diretório
 
-    b) uma arvore de grupo de gerenciamento pode dar suporte a até seis níveis de profundidade. Esse limite não inclui o nível raiz nem o nível da assinatura
+- uma arvore de grupo de gerenciamento pode dar suporte a até seis níveis de profundidade. Esse limite não inclui o nível raiz nem o nível da assinatura
 
-    c) cada grupo de gerenciamento e assinatura podem dar suporte a somente um pai.
+- cada grupo de gerenciamento e assinatura podem dar suporte a somente um pai.
 
 48. criando um recurso:
 
-    a) acessar o link: https://portal.azure.com/learn.docs.microsoft.com
+- acessar o link: https://portal.azure.com/learn.docs.microsoft.com
 
-    b)  Criar um recurso >  Máquina Virtual > Criar.
+- Criar um recurso >  Máquina Virtual > Criar.
 
-    c) Começar com uma avaliação gratuita do Azure - iniciar
+- Começar com uma avaliação gratuita do Azure - iniciar
 
-    d) inicio gratuito
+- inicio gratuito
 
-    e) preencher formulário com dados pessoais
+- preencher formulário com dados pessoais
 
 49. O que é computação em nuvem?
 
-    a) é uma gama de produtos que é entregue a você pela internet(servidor, armazenamentos, banco de dados, redes, software, análises e inteligência. Oferece inovação mais rápida, recursos flexíveis e economias de escala.)
+- é uma gama de produtos que é entregue a você pela internet(servidor, armazenamentos, banco de dados, redes, software, análises e inteligência. Oferece inovação mais rápida, recursos flexíveis e economias de escala.)
 
 50. o que é o Azure monitor?
 
-    a) é um painel para monitoramento dos recursos, assinaturas ...
+- é um painel para monitoramento dos recursos, assinaturas ...
 
 51. Integridade de serviço?
 
-    a) painel que te da acesso a integridade, alertas de problemas/manutenções, avisos de manutenções 
+- painel que te da acesso a integridade, alertas de problemas/manutenções, avisos de manutenções 
 
 52. Central de segurança da Azure - microsoft defender para a nuvem
 
-    a) é um serviço de monitoramento de todos os serviços da azure, ajuda a garantir uma postura -  o quanto seu ambiente esta seguro conforme leis, compliance. exemplo para PCI DSS - Padrão de segurança de dados de setor de cartão de pagamento
+- é um serviço de monitoramento de todos os serviços da azure, ajuda a garantir uma postura -  o quanto seu ambiente esta seguro conforme leis, compliance. exemplo para PCI DSS - Padrão de segurança de dados de setor de cartão de pagamento
 
 53. Azure Sentinel - é um Siem(centraliza os alertas de todos os servidores da sua aplicação) que permite coleta de dados de todos os usuários, dispositivos, aplicativos e infraestrutura. Minimiza falsos positivos usando a análise abrangente e a inteligencia contra ameaças da Microsoft.
 
@@ -383,30 +383,98 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 
 55. O que é ataque de DDOS?
 
-    a) é um ataque de negação de serviços distribuídos, tenta sobrecarregar e esgotar os recursos de um aplicativo.
+- é um ataque de negação de serviços distribuídos, tenta sobrecarregar e esgotar os recursos de um aplicativo.
 
 56. O que é o MFA? é um método de autenticação em duas ou mais etapas (mensagem de email ou whatsapp ou sms por exemplo além da senha no aplicativo)
-
 57. O que é o Acesso condicional? é uma ferramenta da Azure Active Directory para permitir ou negar o acesso a recursos com base em sinais de identidade;
-
 58. O que é bloqueio de recursos?  é um bloqueio que impede que os recursos configurados sejam excluídos ou alterados por acidente.
-
 59. Quais categorias de conformidade estão disponíveis no azure? conformidade com leis, Isos...
-
 60. O que é o Azure governamental? Atende as necessidades e leis e se adapta as necessidades de onde esta sendo implementada
-
 61. O que é a calculadora de TCO(Custo total de propriedade) = é um recurso onde ajuda a estimar a economia de custos de operar sua solução no Azure ao longo do tempo(considerando uma estrutura física como contrapeso)
-
 62. Que tipos de assinatura o Azure possui? Gratuíta; Pago conforme uso; Ofertas de membro;
-
 63. O que são SLAS(Contrato de nível de serviço)? é um contrato formal entre uma empresa de serviços e o cliente. Na Azure esse contrato define os padrões de desempenho com os quais  Microsoft se compromete a fornecer para você (cliente).
-
 64. O que é ciclo de vida? Produtos em teste(podem sair do ar a qualquer momento),;
+65. Em quantos grupos de recursos um recurso pode estar ao mesmo tempo? 
 
-65. https://click.uniacademy.com.br/cloud-hero-az-900-revisao
+- em um 
 
-66. [https://click.uniacademy.com.br/cadastro](https://click.uniacademy.com.br/cadastro)
+66. Qual recurso do Azure replica recursos entre regiões que estão a pelo menos 480 km umas das outras?
 
-67. [https://bit.ly/guia--de--estudos](https://bit.ly/guia--de--estudos)
+- Pares de regiões
+
+67. O que acontece com os recursos dentro de um grupo de recursos quando uma ação ou configuração no nível do Grupo de Recursos é aplicada?
+
+- A configuração é aplicada a recursos atuais e futuros.
+
+68. Containers do Azure
+
+- é um ambiente de virtualização que permite a execução de vários "sistemas" em um só host físico.
+- diferente das máquinas virtuais que executará apenas um sistema operacional por vez, no container vc consegue executar de forma separadas os recursos de seu aplicativo (backend, front e Banco de dados) e até mesmo realizar mudanças em um desses sem afetar o desempenho ou execução do outro.
+- instancias de containers é a maneira mais rápida e simples de executar um conteiner Azure PaaS(plataforma como serviço)
+
+69. O que é Azure Functions?
+
+- é uma opção de computação sem servidor controlada por eventos que não requer a manutenção de máquinas virtuais ou containers.  Para uma aplicação em container ou VM precisamos ter esses recursos em execução para o funcionamento da aplicação. Um Azure Functions terá um evento que desperta a função, reduzindo a necessidade de manter os recursos provisionados quando não há eventos.
+- vantagens: foco no código e não na plataforma ou infraestrutura; funções são entregues conforme a demanda automaticamente; 
+
+70. Serviço de aplicativo Azure:
+
+- permite que você crie e hospede aplicativos Web. É o serviço de hospedagem robusta que você pode usar para hospedar seus aplicativos no Azure. Linguagens: .Net, .Net core, Java, Ruby, Node.JS, PHP Python
+
+71. Tipos de serviços de aplicativos:
+
+- Aplicativos Web: da suporte para hospedagem de aplicativos web nas linguagens:  Asp.net, Asp.net core, Java, Ruby, Node.js, PHP ou Python.
+- Aplicativos de API: hospeda apis em rest usando a linguagem e estrutura que você quiser. Suporte de Swagger e capacidade de empacotar e publicar sua api no azure marketplace.
+- Webjobs: pode-se executar um script ( .cmd, .bat, PowerShell ou Bash) ou um programa (Java, PHP, Python ou Node.js) 
+- Aplicativos móveis: Criar back-end de aplicativos iOS e Android, armazenar dados de um aplicativo movel no banco de dados, autenticar clientes no google, twitter e Facebook, evitar notificações por push, Executar lógica personalizada de back-end no c# ou Node.js.
+
+72. Redes virtuais, permite que os recursos se comuniquem uns com os outros, e ainda permite ou não acesso de usuários na internet.
+
+- segmentação e isolamento, a rede virtual do Azure permite criar redes isoladas. Exe: tais recursos se comunicam entre si e os outros trabalharam em outro seguimento...
+- comunicações com a internet, você permite se um recurso vai ter acesso a internet fora daquele container ou vm.
+- Comunicação entre recursos, permite a comunicação e a validação desse segurança da rede.
+- Comunicação com recursos locais, é possível comunicação entre um recurso local com os recursos do Azure por VPM. O Router permite que essa conecxão não passe pela internet.
+- Rotear trafego de rede - por padrão o Azure faz o roteamento de tráfego entre sub-redes em redes virtuais conectadas, em redes locais e na internet. Mas tbm pode ser feita as configurações pelo cliente.
+- Filtrar trafego de rede - através de grupos de segurança de rede com regras de segurança de entrada ou saída, pode ser configurado pelo adm, exemplo informar os ips das máquinas com acesso.
+- Conectar redes virtuais, emparelhamento permite que duas redes virtuais conectem diretamente entre sí, nunca entrando na internet publica.
+
+73. VPN - rede virtual privada: usa um túnel criptografada dentro de outra rede. as VPNs costumam ser implantadas para conectar duas ou mais redes privadas confiáveis entre si em uma rede não confiável(internet).
+74. Gateways de VPN: é um tipo de gateway de rede virtual.
+
+- Conexões entre redes virtuais
+- Conexões ponto a site
+- Conexões multissite
+- Coexistência com um gateway do Azure ExpressRoute
+
+75. Cenários de alta disponibilidade: é importante manter suas informações seguras, ter certeza de que ela é uma configuração VPN altamente disponível e tolerante a falhas.
+76. Ativo / Em espera 
+
+- Por padrão de VPM são implantados como duas instâncias em uma configuração (ativo)(em espera)
+- Durante esse failover, as conexões são interrompidas, mas normalmente são restauradas em alguns segundos para manutenção planejada e dentro de 90 segundos em caso de interrupções não planejadas.
+
+77. O que é ExpressRoute?
+
+    ![Resultado de imagem para o que é Failover do ExpressRoute](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHSgpVwRn5TEG65qMmwyZiGMHEbEsg8IOw6rX0l2XL&s)
+
+    O **ExpressRoute** permite que você estenda suas redes locais para a nuvem da Microsoft em uma conexão privada com a ajuda de um provedor de conectividade. Com o **ExpressRoute**, você pode estabelecer conexões com os serviços em nuvem da Microsoft, como o Microsoft Azure e o Microsoft 365.
+
+78. ***Failover\* é o termo utilizado para indicar a tolerância a falhas**. Na prática, significa que existem recursos tecnológicos em redundância para evitar a indisponibilidade de um determinado componente, que pode ser um hardware, um link de comunicação, a [infraestrutura de rede](https://blog.betrybe.com/tecnologia/topologias-de-rede/), o [banco de dados](https://blog.betrybe.com/tecnologia/dba/) de uma aplicação ou todo o datacenter.
+
+79. ### Gateways com redundância de zona
+
+    Nas regiões que dão suporte a zonas de disponibilidade, os gateways de VPN e os gateways de ExpressRoute podem ser implantados em uma configuração com redundância de zona. Essa configuração oferece resiliência, escalabilidade e maior disponibilidade para os gateways de rede virtual. A implantação de gateways em zonas de disponibilidade do Azure separa de forma física e lógica os gateways em uma região, enquanto protege a conectividade de rede local com o Azure contra falhas no nível da zona. Esses gateways exigem SKUs de gateway diferentes e usam os endereços IP públicos Standard em vez dos Básicos.
+
+80. ## Recursos e benefícios do ExpressRoute
+
+
+
+
+
+56. https://click.uniacademy.com.br/cloud-hero-az-900-revisao
+57. [https://click.uniacademy.com.br/cadastro](https://click.uniacademy.com.br/cadastro)
+58. [https://bit.ly/guia--de--estudos](https://bit.ly/guia--de--estudos)
 
 Revisão https://www.youtube.com/watch?v=YjMSGV9YQSA&ab_channel=WellingtonAg%C3%A1pto-CloudHero
+
+
+
