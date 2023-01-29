@@ -466,6 +466,56 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 
 80. ## Recursos e benefícios do ExpressRoute
 
+- o expressRoute é um serviço que permite que você estenda sua rede local para a nuvem com a Microsoft com ajuda de um provedor de conexão (VPN), sem cair na internet pública.
+- conectar com os recursos Microsoft independente de sua localização(Microsoft Office, Microsoft Dynamics, VM da Azure, Armazenamento Azure...).
+- Conectividade global, sem trafegar dados pela internet pública.
+- Roteamento dinâmico entre sua rede e a Microsoft(BGP - Border Gateway Protocol)
+- redundância interna em cada local de emparelhamento para proporcionar maior confiabilidade.
+- O ExpressRoute dá suporte a quatro modelos que podem ser usados para conectar a rede local: Colocação do CloudExchange; Conesão Ethernet ponto a ponto; Conexão qualquer para qualquer; Direto de sites do ExpressRoute;
+
+81. DNS Azure
+
+- Oferece resolução de nomes usando infraestrutura da Microsoft
+- Confiabilidade e desempenho
+- segurança
+- facilidade de uso
+- personalizar redes virtuais
+- registros de alias
+
+82. Qual recurso da Máquina Virtual do Azure escalona atualizações entre VMs com base no domínio de atualização e no domínio de falha?
+
+- Conjuntos de disponibilidade
+
+- Os conjuntos de disponibilidade escalonam atualizações de VM com base em seus domínios de atualização e falha.
+
+83. Qual serviço do Azure permite que os usuários usem uma versão hospedada na nuvem do Windows de qualquer local e se conectem da maioria dos navegadores modernos?
+
+- Área de Trabalho Virtual do Azure
+- A Área de Trabalho Virtual do Azure dá acesso a uma versão hospedada na nuvem do Windows e funciona com a maioria dos navegadores modernos.
+
+84. Descrever as contas de armazenamento do Azure:
+
+- Uma conta de armazenamento fornece um namespace exclusivo para os dados do armazenamento do Azure, que permite acessar de qualquer lugar do mundo. Seguro disponíveis e duráveis e escalonáveis.
+- armazenamento com redundância local(LRS)
+- Armazenamento com redundância geográfica (GRS)
+- armazenamento com redundância geográfica com acesso de leitura(RA-GRS)
+- armazenamento com redundância de zona(ZRS)
+- Armazenamento com redundância de zona geográfica (GZRS)
+- Ao nomear sua conta de armazenamento, lembre-se dessas regras:
+  - Os nomes da conta de armazenamento devem ter entre 3 e 24 caracteres e podem conter apenas números e letras minúsculas.
+  - O nome da sua conta de armazenamento deve ser exclusivo no Azure. Duas contas de armazenamento não podem ter o mesmo nome. Isso dá suporte à capacidade de ter um namespace exclusivo e acessível no Azure.
+- Redundância primária - os dados em uma conta de armazenamento Azure são sempre replicados três vezes na região primária que pode ser LRS ou ZRS
+- O LRS é uma opção de redundância de menor custo e oferece menor durabilidade. Mantem os dados redundantes dentro do mesmo Data Center
+- Redundância Zero ZRS - replica os dados em três zonas de disponibilidade do Azure na região primária. 
+- Redundância em região secundária - armazena os dados em outro Data Center que esta a centenas de quilômetros da região primária. Isso resulta em maior segurança, pois em caso de desastre natural o segundo data center esta localizado mais longe do primeiro.
+- Redundância de Geografia - GRS copia os dados de maneira síncrona três vezes em um único local físico na região primária. Em seguia copia 3 vezes na região secundária tbm.
+
+
+
+
+
+
+
 
 
 
