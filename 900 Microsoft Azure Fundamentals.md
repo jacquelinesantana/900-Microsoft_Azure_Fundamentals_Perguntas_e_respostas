@@ -528,7 +528,13 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 - suporte developer: possui custo, o mais acessível;
 - suporte Standard: com mais opções que o anterior e mais caro tbm
 - suporte professional direct: o mais completo e com mais apoio para o cliente Azure.
--  
+
+93. CLI Azure, como instalar e linhas de comando:
+
+- https://docs.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest
+- https://docs.microsoft.com/pt-br/cli/azure/install-azure-cli
+
+
 
 
 
