@@ -522,6 +522,13 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 - Estancia reservada 1 ano(instancia spot), é um tipo de cobrança que oferece o mesmo produto por valor mais acessível(com desconto) já que você tem o compromisso de pagar por 1 ano.
 
 91. Cost Management - conta administradora - aqui você consegue acessar as assinaturas e os recursos pertencentes a essas assinaturas. é possível criar alertas de custo para evitar imprevistos com os gastos.
+92. Suporte de contas:
+
+- suporte basic: para contas de teste em versão de teste ou gratuíta. não tem custo de suporte
+- suporte developer: possui custo, o mais acessível;
+- suporte Standard: com mais opções que o anterior e mais caro tbm
+- suporte professional direct: o mais completo e com mais apoio para o cliente Azure.
+-  
 
 
 
