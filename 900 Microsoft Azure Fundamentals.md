@@ -311,7 +311,7 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 
 41. Vantagens dos grupos de recursos: quando vc adicionar uma ação a um grupo, todos os recursos desse grupo recebem essa ação, quando se da permissão de acesso a um grupo de recursos, todos os recursos desse grupo se tornam acessíveis, e quando se exclui um grupo, todos os recursos são excluídos.
 
-42. Assinaturas do azure, são uma unidade de gerenciamento, cobrança e escala, facilita a cobrança. Uma conta pode ter várias assinaturas. 
+42. Assinaturas(subscriptions) do azure, são uma unidade de gerenciamento, cobrança e escala, facilita a cobrança. Uma conta pode ter várias assinaturas. 
 
 43. Limites para assinatura:
 
@@ -510,9 +510,16 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 - Redundância em região secundária - armazena os dados em outro Data Center que esta a centenas de quilômetros da região primária. Isso resulta em maior segurança, pois em caso de desastre natural o segundo data center esta localizado mais longe do primeiro.
 - Redundância de Geografia - GRS copia os dados de maneira síncrona três vezes em um único local físico na região primária. Em seguia copia 3 vezes na região secundária tbm.
 
+85. IAAS - Infraestrutura como serviço - pode ser uma maquina virtual que vc gerencia quantidade de memória, processador, sistema operacional ...
+86. PAAS - plataforma como serviço - podemos citar um banco de dados que pode ser acessado sem se preocupar com o hardware e o sistema operacional
+87. SAAS - serviço - uso apenas um serviço sem me preocupar com anda disso, pode ser uma parte de um sistema pronto para uso
+88. Serverless - é a criação de funções que serão gerenciados aplicados no Hardware da Azure, mas não preciso me preocupar com hardware e posso escalar o serviço conforme a necessidade
+89. Mais de 160 Datacenter fisicamente separados distribuídos em regiões - Geografia/ Regiões e zonas de disponibilidades. Então temos as zonas de distribuições que -> estão dentro das zonas -> que são Geográficas; Geografia = Canadá ; Região é um grupo de zonas de disponibilidade https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/
+90. Formas de pagamento,
 
-
-
+- Pay as you go - Pago pelo uso: é a forma de cobrança para os produtos que você não contrata com valor fixo, e sim pagará conforme a sua demanda de uso.
+- preço por produto, é o valor que cada produto tem para seu custo.
+- Estancia reservada 1 ano(instancia spot), é um tipo de cobrança que oferece o mesmo produto por valor mais acessível(com desconto) já que você tem o compromisso de pagar por 1 ano.
 
 
 
