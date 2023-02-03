@@ -307,7 +307,7 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 
 39. Recursos: são todos e qualquer serviço Azure que você venha a implementar, criar, provisionar...
 
-40. Grupos de recursos: um recurso é um bloco de construção básico do Azure. Os grupos de recurso são simplesmente agrupamento de recursos. quando se cria um recurso, é necessário inclui-lo em um grupo de recursos. Podemos mover um recurso de um grupo para outro, porém não podemos adicionar um grupo ou outro, exemplo: grupo de recursos a pertence a grupo de recursos c.
+40. Grupos de recursos ou contêiner: um recurso é um bloco de construção básico do Azure. Os grupos de recurso são simplesmente agrupamento de recursos. quando se cria um recurso, é necessário inclui-lo em um grupo de recursos. Podemos mover um recurso de um grupo para outro, porém não podemos adicionar um grupo ou outro, exemplo: grupo de recursos a pertence a grupo de recursos c.
 
 41. Vantagens dos grupos de recursos: quando vc adicionar uma ação a um grupo, todos os recursos desse grupo recebem essa ação, quando se da permissão de acesso a um grupo de recursos, todos os recursos desse grupo se tornam acessíveis, e quando se exclui um grupo, todos os recursos são excluídos.
 
@@ -520,6 +520,8 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 - Pay as you go - Pago pelo uso: é a forma de cobrança para os produtos que você não contrata com valor fixo, e sim pagará conforme a sua demanda de uso.
 - preço por produto, é o valor que cada produto tem para seu custo.
 - Estancia reservada 1 ano(instancia spot), é um tipo de cobrança que oferece o mesmo produto por valor mais acessível(com desconto) já que você tem o compromisso de pagar por 1 ano.
+
+91. Cost Management - conta administradora - aqui você consegue acessar as assinaturas e os recursos pertencentes a essas assinaturas. é possível criar alertas de custo para evitar imprevistos com os gastos.
 
 
 
