@@ -534,7 +534,44 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 - https://docs.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest
 - https://docs.microsoft.com/pt-br/cli/azure/install-azure-cli
 
+94. Quais são os Serviços de computação: 
+    - https://docs.microsoft.com/pt-br/azure/virtual-machines/sizes
 
+- é um conjunto de provimento de computação, conjunto de serviços
+
+  - Maquina virtual
+  - Web service - Azure app service - hospedagem de uma aplicação
+  - Azure Container Instances - você pode subir container 
+  - Administração ou gestão de container
+  - Windows Virtual Desktop - virtualização de sistema operacional, criar quantas estações windows forem necessários para acesso remoto
+  - Azure Functions - serviços providos onde vc cria o seu código e hospeda na Azure e a estrutura toda do ambiente fica por conta da Azure.
+
+
+95. O que é RDP ?
+
+- Remote Desktop - área de trabalho remota
+
+96. De que forma podemos conectar nas instâncias Linux?
+
+- SSH a partir da máquina local
+
+97. O que é o recurso Azure VM Scale Sets?
+
+- é o conceito de uma maquina virtual que atende demandas escalando a sua entrega inclusive permitindo agendamento de momentos de pico de acesso ao serviço onde poderemos atender essa demanda mais alta de maneira mais assertiva, podendo voltar a uma configuração "menor" após esse pico de acesso. Escolher em quais zonas de disponibilidade vamos colocar essa VM e recursos de memória e outros recursos e customizando a disponibilidade da aplicação.
+- é possível criar uma imagem da VM customizada para atender altas demandas.
+- é possível indicar o número de instancias(duas maquinas) - redundância da disponibilidade para mais de uma maquina virtual atendendo, caso uma caia a outra assumir.
+- São criadas duas chaves para acesso.
+- Usar uma imagem de VM personalizada é possível criar a imagem deixar esta em uma galeria e quando for necessário fazer uso dessa imagem.
+
+98 O que é App Services?
+
+- Você pode fazer deploy de um app e o Azure que fica responsável por criar o ambiente para sua api.
+- Nesse caso você vai pagar pelos recursos que sua app demandar.
+- Paas - plataforma como serviço é o caso da App services - plataforma que será hospedado seu site, aplicação, containers ou back end de uma api, na linguagem que eu me sentir confortável em codar
+
+99. O App services é um serviço baseado em..... para a construção de aplicativos ..... 
+
+- HTTP / WEB
 
 
 
