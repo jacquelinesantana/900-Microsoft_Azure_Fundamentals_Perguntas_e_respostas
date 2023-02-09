@@ -573,6 +573,31 @@ https://learn.microsoft.com/pt-br/training/modules/describe-azure-compute-networ
 
 - HTTP / WEB
 
+100. Azure App Service como extensão para o VS Code?
+
+- é uma extensão que ajuda a criar o processo de deploy na Azure, tbm podemos instalar a instensão Azure Account para customizar esse processo;
+- para isso é necessário configurar com a conta do Azure - Select Subscripts; Também podemos buscar no VS Code por Azure Sign in e fazer o login pelo navegador. Feito isso no Account aparece as keys do login feito.
+- para o deploy indica-se utilizar a documentação oficial Azure para o tipo de aplicação feita Ex app em Node JS, buscar documentação para Deploy Node. deploy será feito no diretório myWebApp e ir confirmando os alertas.
+- App quando feito o Deploy vai criar um novo recurso no seu ambiente Portal Azure, que pode ser pesquisado na barra de busca também.
+
+101 . Podemos fazer Deploy em uma app Service utilizando quais ferramentas?
+
+- VSCode, Portal Azure, Az CLI e Terraform
+
+102. O que é Terraform?
+
+- é uma ferramenta de código aberto comumente utilizada para construir/ alterar/ versionar uma infraestrutura de forma segura e eficiente, através de uma linguagem declarativa.
+
+103. Contêiner o que é para que serve?
+
+- podemos usar para rodar uma imagem de docker, sem precisar se preocupar com a parte de hardware apenas focando em colocar o container para funcionar e com transparência do hardware.
+- para um ambiente maior mais robusto usaremos um pubernets
+- Pubernet é quem gerencia os containers em execução e por isso ele também é chamado de orquestrador de containers.
+
+
+
+
+
 
 
 
